@@ -1,13 +1,16 @@
 #include <iostream>
 using namespace std;
-float swap(float a, float b) {
+void swap(float a, float b) {
 	float c = a;
 	a = b;
-	return a;
+	b = c;
+	cout << a <<" "<< b;
+
 }
 int main() {
 	float num1, num2;
 	cout << "Enter num1 and num2 ";
 	cin >> num1 >> num2;
-	cout << swap(num1, num2) <<" " << swap(num2, num1);
+	cout << num1 << " " << num2<<"\n";
+	swap(num1, num2);
 }
